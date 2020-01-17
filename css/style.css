@@ -1,4 +1,41 @@
-.container {
+/* header starts here  */
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.logo {
+display: flex;
+
+}
+
+.logo img {
+  width: 200px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  order: 2;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart {
+  display: flex;
+  order: 1;
+ }
+
+ .cart img {
+   width: 100px;
+   height: 30px;
+ }
+
+ .container {
   position: relative;
   max-width: 1240px;
   margin: 0 auto;
@@ -6,14 +43,22 @@
 }
 
 .hero-banner {
-  width: 100%;
   height: 400px;
-  background-image: 
-  url(../images/images/banner-girl.png), url(../images/images/flower-bkgd.jpg);
-  
+  background-image: url(../images/images/banner-girl.png),
+    url(../images/images/flower-bkgd.jpg);
+
   background-position: center 50px, center;
-  background-repeat:  no-repeat, repeat;
-  background-size:  contain, cover;
+  background-repeat: no-repeat, repeat;
+  background-size: contain, cover;
+}
+
+/* features start here*/
+figure {
+  width: 300px;
+ }
+
+figure img {
+  width: 100%;
 }
 
 header {
@@ -25,16 +70,7 @@ header {
   max-height: 200px;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  padding-top: 2%;
-  max-width: 100%;
-  margin-top: 3%;
-}
-nav section ul {
-  display: flex;
-}
+
 
 ul li a {
   text-decoration: none;
@@ -70,10 +106,8 @@ footer section ul li {
 }
 
 .address {
-  color:#969696;
+  color: #969696;
 }
-
-
 
 .sign-up {
   width: 100%;
@@ -83,4 +117,16 @@ footer section ul li {
   background-repeat: no-repeat;
   background-size: cover, contain, cover;
   color: white;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  body {
+    background-color: blue;
+  }
 }
