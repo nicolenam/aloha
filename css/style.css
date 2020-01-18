@@ -14,7 +14,8 @@
 @font-face {
   font-family: "Raleway Medium Italic";
   src: url("../fonts/Raleway-MediumItalic.eot");
-  src: url("../fonts/Raleway-MediumItalic.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/Raleway-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/Raleway-MediumItalic.woff2") format("woff2"),
     url("../fonts/Raleway-MediumItalic.woff") format("woff"),
     url("../fonts/Raleway-MediumItalic.ttf") format("truetype"),
@@ -26,7 +27,8 @@
 @font-face {
   font-family: "Raleway Light Italic";
   src: url("../fonts/Raleway-LightItalic.eot");
-  src: url("../fonts/Raleway-LightItalic.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/Raleway-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/Raleway-LightItalic.woff2") format("woff2"),
     url("../fonts/Raleway-LightItalic.woff") format("woff"),
     url("../fonts/Raleway-LightItalic.ttf") format("truetype"),
@@ -50,11 +52,13 @@
 @font-face {
   font-family: "Playfair Display Italic";
   src: url("../fonts/PlayfairDisplay-Italic.eot");
-  src: url("../fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/PlayfairDisplay-Italic.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
     url("../fonts/PlayfairDisplay-Italic.woff") format("woff"),
     url("../fonts/PlayfairDisplay-Italic.ttf") format("truetype"),
-    url("../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+    url("../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic")
+      format("svg");
   font-weight: normal;
   font-style: italic;
 }
@@ -62,7 +66,8 @@
 @font-face {
   font-family: "Playfair Display Bold Italic";
   src: url("../fonts/PlayfairDisplay-BoldItalic.eot");
-  src: url("../fonts/PlayfairDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/PlayfairDisplay-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
     url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff"),
     url("../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"),
@@ -75,7 +80,8 @@
 @font-face {
   font-family: "Playfair Display Bold";
   src: url("../fonts/PlayfairDisplay-Bold.eot");
-  src: url("../fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/PlayfairDisplay-Bold.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
     url("../fonts/PlayfairDisplay-Bold.woff") format("woff"),
     url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
@@ -87,17 +93,68 @@
 @font-face {
   font-family: "Playfair Display Regular";
   src: url("../fonts/PlayfairDisplay-Regular.eot");
-  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
     url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
     url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
-    url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+    url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 /* mobile query */
 
+/* navigation  */
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0.5em;
+}
+
+.logo {
+  display: flex;
+  width: 50%;
+}
+
+
+.item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  order:1; 
+} 
+
+.item ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+  
+}
+
+
+.logo img {
+  display: flex;
+  width: 100px;
+  
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.cart img{
+  display: flex;
+  width: 40px;
+}
 /* typography  */
 
 body {
@@ -115,6 +172,7 @@ h3 {
 }
 
 li a {
+  font-family: "Raleway Medium";
   color: #e2574c;
   text-decoration: none;
 }
@@ -130,7 +188,6 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display Regular";
-
 }
 
 .playfair-italic {
@@ -145,11 +202,6 @@ h6 {
 footer {
   background-color: #242424;
 }
-
-
-
-
-
 
 /* Breakpoints */
 
