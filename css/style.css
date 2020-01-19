@@ -104,16 +104,16 @@
   font-style: normal;
 }
 
-/* mobile query */
+/* MOBILE*/
 
-/* HEADER STARTS HERE  */
+/* HEADER BEGINS  */
 
 header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 110px;
 }
 
 .logo {
@@ -141,24 +141,69 @@ header {
 
 .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   order: 1;
 }
 
 .navigation ul {
+  
   display: flex;
+ 
 }
 
 .navigation ul li {
-  padding: 0 1em;
+  text-transform: uppercase;
+  padding: 1em;
 }
 
 .navigation ul li a {
   font-family: "Raleway Medium";
+  font-weight: 1000;
   color: #e2574c;
   text-decoration: none;
 }
+
+/* HEADER ENDS  */
+
+/* HERO BANNER BEGINS */
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/images/banner-girl.png),
+    url(../assets/images/flower-bkgd.jpg);
+  background-position: center 30px, center 100%;
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.hero-container p {
+  display: inline-block;
+  color: white;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px #d7d7d7;
+  padding-bottom: 30px;
+  }
+
+.hero-container h2 {
+  display: inline-block;
+  color: white;
+  text-shadow: 1px 1px 1px #d7d7d7;
+  font-size: 3.5em;
+}
+
+/* HERO BANNER ENDS  */
+
+/* ABOUT BEGINS  */
+
+
 
 /* .logo {
   display: flex;
