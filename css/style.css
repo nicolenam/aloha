@@ -338,20 +338,25 @@ header {
 /* FOOTER STARTS HERE  */
 
 .footer {
-  padding: 1em;
-}
-
-.footer div p {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
 }
 
 .white {
   color: white;
-  padding-bottom: 1.5em;
+ padding: 1em;
+  text-align: center;
 }
 .white a {
   text-decoration: none;
   color: white;
+}
+
+.address {
+  text-align: center;
 }
 
 a:hover {
@@ -363,7 +368,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 2em;
+  padding: 1em;
 }
 
 .sns ul li {
