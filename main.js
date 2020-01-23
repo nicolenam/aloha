@@ -1,36 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+// FEATURED STARTS HERE   
+let elem = document.querySelector('.carousel');
+
+let flkty = new Flickity( elem, {
+    wrapAround: true,
+    cellAlign: 'center',
+    contain: true
+  });
+// FEATURED ENDS HERE 
 
 
 
+// SUBSCRIPTION STARTS HERE 
+
+document.getElementById('subBtn').addEventListener("click", function() {
+  alert("Thank you for Subscribing !");
+});
 
 
 
-
-
-  // var elem = document.querySelector('.main-carousel');
-    // var flkty = new Flickity( elem, {
-    //   // options
-    //   cellAlign: 'left',
-    //   contain: true
-    // });
-    
-    // // element argument can be a selector string
-    // //   for an individual element
-    // var flkty = new Flickity( '.main-carousel', {
-    //   // options
-    // });
-
-// const cartBtn = document.getElementById("knitDress")
-
-// let clicks = 0
-
-// cartBtn.addEventListener("click", function(e) {
-// clicks ++
-// console.log(clicks)
-
-
-
-// })
+// SUBSCRIPTION ENDS HERE 
 
 });

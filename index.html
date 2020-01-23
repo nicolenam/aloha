@@ -4,18 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-    <script
-    src="https://kit.fontawesome.com/582877070b.js"
-    crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-  <script src="/path/to/flickity.pkgd.min.js"></script>
-  <title>Aloha Apparel</title>
+    <link rel="stylesheet" href="flickity.css" />
+    <title>Aloha Apparel</title>
   </head>
 
   <body>
@@ -23,7 +15,7 @@
       <section class="logo">
         <img src="images/images/aloha-logo.svg" />
       </section>
-      <nav class="navigation" >
+      <nav class="navigation">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#shop">Shop</a></li>
@@ -32,12 +24,12 @@
         </ul>
       </nav>
       <section class="cart">
-       <img src="images/images/cart-icon.svg">
-         </section>
+        <img src="images/images/cart-icon.svg" />
+      </section>
     </header>
 
-       <main>
-     <!-- HERO  -->
+    <main>
+      <!-- HERO  -->
       <section class="hero-container">
         <p>New Collection</p>
         <h2>Fall/Winter 2020</h2>
@@ -47,8 +39,8 @@
       <!-- ABOUT  -->
       <section class="about" id="about">
         <h2>
-          <span class="playfair-italic">Hand-Crafted</span
-          ><span class="playfair-bold"> Styles</span>
+          <span class="playfair-italic">Hand-Crafted</span>
+          <span class="playfair-bold"> Styles</span>
         </h2>
         <p>
           Aloha Apparel Co. sells only the finest ready-to-travel clothing.
@@ -56,7 +48,7 @@
         </p>
       </section>
       <!-- ABOUT ENDS  -->
-    
+
       <!-- SHOP GRID  -->
       <section class="grid" id="shop">
         <div class="items">
@@ -78,76 +70,82 @@
           <span>Women's</span>
         </div>
       </section>
-<!-- SHOP GRID ENDS  -->
+      <!-- SHOP GRID ENDS  -->
 
-     <!-- FEATURED PRODUCTS   -->
+      <!-- FEATURED PRODUCTS   -->
       <section Class="featured">
         <h2>
-          <span class="playfair-italic">Most-Loved</span
-          ><span class="playfair-bold"> Products</span>
+          <span class="playfair-italic">Most-Loved</span>
+          <span class="playfair-bold"> Products</span>
         </h2>
 
-        <div class="carousel"
-        data-flickity='{ "wrapAround": true }'>
-        <div class="carousel-cell"><img src="images/images/stretch-knit-dress.jpg">
+        <div class="carousel">
+          <div class="carousel-cell">
+            <img src="images/images/stretch-knit-dress.jpg" />
             <p>Dresses</p>
             <h3>Stretch Knit Dress</h3>
             <p>$169.00</p>
             <button class="cartBtn" id="knitDress">Add to Cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/blue-hipster-backpack.jpg" />
+            <p>Bags</p>
+            <h3>Blue Hipster Backpack</h3>
+            <p>$69.00</p>
+            <button class="cartBtn">Add to Cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/demin-overall-shorts.jpg" />
+            <p>Denim</p>
+            <h3>Denim Overall Shorts</h3>
+            <p>$89.00</p>
+            <button class="cartBtn">Add to Cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/pink-dotted-dress.jpg" />
+            <p>Dresses</p>
+            <h3>Pink Dotted Dress</h3>
+            <p>$99.00</p>
+            <button class="cartBtn">Add to Cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/checked-stretch-dress.jpg" />
+            <p>Dresses</p>
+            <h3>Checked Stretch Dress</h3>
+            <p>$89.00</p>
+            <button class="cartBtn">Add to Cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/cotton-yellow-tshirt.jpg" />
+            <p>T-shirt</p>
+            <h3>Cotton Yellow T-shirt</h3>
+            <p>$89.00</p>
+            <button class="cartBtn">Add to Cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/blue-silk-dress.jpg" />
+            <p>Dresses</p>
+            <h3>Blue Silk Dress</h3>
+            <p>$89.00</p>
+            <button class="cartBtn">Add to Cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/cotton-blue-shirt.jpg" />
+            <p>T-shirt</p>
+            <h3>Cotton Blue Shirt</h3>
+            <p>$89.00</p>
+            <button class="cartBtn">Add to Cart</button>
+          </div>
         </div>
-        <div class="carousel-cell"><img src="images/images/blue-hipster-backpack.jpg">
-          <p>Bags</p>
-          <h3>Blue Hipster Backpack</h3>
-          <p>$69.00</p>
-          <button class="cartBtn">Add to Cart</button>
-        </div>
-        <div class="carousel-cell"><img src="images/images/demin-overall-shorts.jpg">
-          <p>Denim</p>
-          <h3>Denim Overall Shorts</h3>
-          <p>$89.00</p>
-          <button class="cartBtn" >Add to Cart</button>
-        </div>
-        <div class="carousel-cell"> <img src="images/images/pink-dotted-dress.jpg" />
-          <p>Dresses</p>
-          <h3>Pink Dotted Dress</h3>
-          <p>$99.00</p>
-          <button  class="cartBtn">Add to Cart</button>
-        </div>
-        <div class="carousel-cell"> <img src="images/images/checked-stretch-dress.jpg" />
-          <p>Dresses</p>
-          <h3>Checked Stretch Dress</h3>
-          <p>$89.00</p>
-          <button class="cartBtn">Add to Cart</button>
-        </div>
-        <div class="carousel-cell">   <img src="images/images/cotton-yellow-tshirt.jpg" />
-          <p>T-shirt</p>
-          <h3>Cotton Yellow T-shirt</h3>
-          <p>$89.00</p>
-          <button class="cartBtn">Add to Cart</button>
-        </div>
-        <div class="carousel-cell">  <img src="images/images/blue-silk-dress.jpg" />
-          <p>Dresses</p>
-          <h3>Blue Silk Dress</h3>
-          <p>$89.00</p>
-          <button class="cartBtn">Add to Cart</button>
-        </div>
-        <div class="carousel-cell"> <img src="images/images/cotton-blue-shirt.jpg"/>
-          <p>T-shirt</p>
-          <h3>Cotton Blue Shirt</h3>
-          <p>$89.00</p>
-          <button class="cartBtn">Add to Cart</button>
-        </div>
-      </div>
+            </section>
 
-         
-<!-- FEATURED PRODUCT ENDS  -->
+      <!-- FEATURED PRODUCT ENDS  -->
 
-
-<!-- SUBSCRIPTION  -->
+      <!-- SUBSCRIPTION  -->
       <section class="updates" id="updates">
         <h2>
-          <span class="playfair-italic">Sign-up for</span
-          ><span class="playfair-bold"> Updates</span>
+          <span class="playfair-italic">Sign-up for</span>
+          <span class="playfair-bold"> Updates</span>
         </h2>
         <p>
           Stay updated on our latest product releases, be first to find out
@@ -155,8 +153,9 @@
           Unsubscribe at anytime.
         </p>
         <form>
-          <input type="email" placeholder="Your Email" />
-          <input type="submit" value="Subscribe" />
+          <input class="email" type="email" placeholder="Your Email" />
+          <!-- <input class="subscribe" onclick="alert('Thanks for subscribing !');" type="submit" value="Subscribe" /> -->
+          <button id="subBtn">Subscribe</button>
         </form>
       </section>
     </main>
@@ -166,7 +165,10 @@
           &copy 2020 Aloha Apparel Co. <br />
           Powered by HTML and CSS.
         </p>
-        <p class="white2">647-647-6040. <a mailto:info@alohaapparel.com>info@alohaapparel.com</a></p>
+        <p class="white2">
+          647-647-6040.
+          <a mailto:info@alohaapparel.com>info@alohaapparel.com</a>
+        </p>
         <p class="address">
           1490 W Broadway <br />
           Vancouver, BC, Canada
@@ -182,8 +184,11 @@
       </div>
     </footer>
     <!-- SUBSCRIPTION ENDS  -->
-
-
+    <script
+      src="https://kit.fontawesome.com/582877070b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
+    <script src="flickity.js"></script>
   </body>
 </html>
