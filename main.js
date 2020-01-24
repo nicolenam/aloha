@@ -5,7 +5,7 @@ let elem = document.querySelector('.carousel');
 
 let flkty = new Flickity( elem, {
     wrapAround: true,
-    cellAlign: 'center',
+    cellAlign: 'left',
     contain: true
   });
 // FEATURED ENDS HERE 
