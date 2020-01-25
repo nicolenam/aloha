@@ -423,7 +423,7 @@ input {
   font-size: 14px;
   padding: 7px 20px;
   height: 30px;
-  width: 100%;
+  width: 300px;
   position: relative;
 }
 
@@ -434,11 +434,14 @@ input {
   color: #ffffff;
   font-size: 14px;
   position: absolute;
-  width: 102px;
-  left: 290px;
-  top: 5px;
-  height: 51px;
+  padding-left: 0px;
   padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  width: 100px;
+  height: 35px;
+  right: 5px;
+  margin-top: 5px;
 }
 
 /* UPDATES ENDS HERE */
@@ -563,9 +566,18 @@ h6 {
     width: 400px;
   }
 
-  #subBtn {
-    left: 290px;
-  }
+#subBtn{
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  width: 100px;
+  height: 45px;
+  right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 8px;
+}
   .hero-container p {
     font-family: "Raleway Medium";
   }
@@ -633,7 +645,33 @@ h6 {
     background-size: cover;
     grid-column: 3/5;
   }
-}
 
+  .sns span {
+    display: inline-block;
+  }
+
+}
 @media screen and (min-width: 1240px) {
+
+  .grid {
+    height: 800px;
+  }
+
+  .about p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 225px;
+    margin-right: 225px;
+    padding-top: 20px;
+  }
+
+  .updates p {
+    margin-left: 200px 200px;
+  }
+
+  .cartBtn {
+display: inline-block;
+  }
+
+
 }
