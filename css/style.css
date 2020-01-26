@@ -108,6 +108,10 @@
 
 /* HEADER STARTS  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
 }
@@ -419,7 +423,7 @@ input {
   border: 1px solid white;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: black;
   font-size: 14px;
   padding: 7px 20px;
   height: 30px;
@@ -566,18 +570,18 @@ h6 {
     width: 400px;
   }
 
-#subBtn{
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  width: 100px;
-  height: 45px;
-  right: 5px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 8px;
-}
+  #subBtn {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    width: 100px;
+    height: 45px;
+    right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 8px;
+  }
   .hero-container p {
     font-family: "Raleway Medium";
   }
@@ -650,9 +654,23 @@ h6 {
     display: inline-block;
   }
 
+  .flickity-prev-next-button {
+    display: inline-block;
+  }
+
+  .cartBtn {
+    display: inline-block;
+    background-color: #333;
+    border-radius: 28px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+
+    width: 100px;
+    height: 35px;
+  }
 }
 @media screen and (min-width: 1240px) {
-
   .grid {
     height: 800px;
   }
@@ -666,12 +684,23 @@ h6 {
   }
 
   .updates p {
-    margin-left: 200px 200px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
 
   .cartBtn {
-display: inline-block;
+    display: inline-block;
+    background-color: #333;
+    border-radius: 28px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+
+    width: 100px;
+    height: 35px;
   }
 
-
+  .flickity-prev-next-button {
+    display: inline-block;
+  }
 }
