@@ -209,12 +209,13 @@ header {
 
 .hero-container h2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   text-align: center;
   color: white;
   text-shadow: 0.5px 0.5px 0.5px #d7d7d7;
   font-size: 3.5em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* HERO BANNER ENDS  */
@@ -334,7 +335,6 @@ header {
 }
 
 .carousel {
-  /* width: 100%; */
   margin-top: 10%;
   margin-bottom: 15%;
 }
@@ -625,7 +625,7 @@ h6 {
 
   .grid {
     grid-template-columns: repeat(4, 1fr);
-    height: 500px;
+    height: 400px;
     grid-gap: 0.7em;
   }
 
@@ -654,10 +654,7 @@ h6 {
     display: inline-block;
   }
 
-  .flickity-prev-next-button {
-    display: inline-block;
-  }
-
+ 
   .cartBtn {
     display: inline-block;
     background-color: #333;
@@ -702,5 +699,9 @@ h6 {
 
   .flickity-prev-next-button {
     display: inline-block;
+  }
+
+  .carousel-cell {
+    width: 25%;
   }
 }

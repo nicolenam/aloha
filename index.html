@@ -17,6 +17,7 @@
       </section>
       <section class="cart">
         <img src="images/images/cart-icon.svg" />
+        <p id=number>p</p>
       </section>
       <nav class="navigation">
         <ul>
@@ -81,12 +82,12 @@
 
         <div class="carousel">
           <div class="carousel-cell">
-            <img src="images/images/stretch-knit-dress.jpg" />
+            <img src="images/images/checked-stretch-dress.jpg" />
             <div class="carInfo">
               <p>Dresses</p>
-              <h3>Stretch Knit Dress</h3>
-              <p>$169.00</p>
-              <button class="cartBtn" id="knitDress">Add to Cart</button>
+              <h3>Checked Stretch Dress</h3>
+              <p>$89.00</p>
+              <button id="tempBtn" class="cartBtn">Add to Cart</button>
             </div>
           </div>
           <div class="carousel-cell">
@@ -117,12 +118,21 @@
             </div>
           </div>
           <div class="carousel-cell">
-            <img src="images/images/checked-stretch-dress.jpg" />
+            <img src="images/images/stretch-knit-dress.jpg" />
             <div class="carInfo">
               <p>Dresses</p>
-              <h3>Checked Stretch Dress</h3>
+              <h3>Stretch Knit Dress</h3>
+              <p>$169.00</p>
+              <button class="cartBtn" id="knitDress">Add to Cart</button>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/images/cotton-blue-shirt.jpg" />
+            <div class="carInfo">
+              <p>T-shirt</p>
+              <h3>Cotton Blue Shirt</h3>
               <p>$89.00</p>
-              <button id="cartBtn">Add to Cart</button>
+              <button class="cartBtn">Add to Cart</button>
             </div>
           </div>
           <div class="carousel-cell">
@@ -139,15 +149,6 @@
             <div class="carInfo">
               <p>Dresses</p>
               <h3>Blue Silk Dress</h3>
-              <p>$89.00</p>
-              <button class="cartBtn">Add to Cart</button>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <img src="images/images/cotton-blue-shirt.jpg" />
-            <div class="carInfo">
-              <p>T-shirt</p>
-              <h3>Cotton Blue Shirt</h3>
               <p>$89.00</p>
               <button class="cartBtn">Add to Cart</button>
             </div>
@@ -169,8 +170,8 @@
           Unsubscribe at anytime.
         </p>
         <form>
-          <input class="email" type="email" placeholder="Your Email" />
-          <button id="subBtn">Subscribe</button>
+          <input id="fname" type="email" placeholder="Your Email"  />
+          <input id="subBtn"type="submit" value="Submit">
         </form>
       </section>
     </main>
@@ -191,10 +192,18 @@
       </div>
       <div class="sns">
         <ul>
-          <li><i class="fab fa-facebook-f"><span>Facebook</span></i></li>
-          <li><i class="fab fa-twitter"><span>Twitter</span></i></li>
-          <li><i class="fab fa-instagram"><span>Instgram</span></i></li>
-          <li><i class="fab fa-pinterest"><span>Pinterest</span></i></li>
+          <li>
+            <i class="fab fa-facebook-f"><span>Facebook</span></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter"><span>Twitter</span></i>
+          </li>
+          <li>
+            <i class="fab fa-instagram"><span>Instgram</span></i>
+          </li>
+          <li>
+            <i class="fab fa-pinterest"><span>Pinterest</span></i>
+          </li>
         </ul>
       </div>
     </footer>

@@ -7,36 +7,32 @@ document.addEventListener("DOMContentLoaded", function() {
     contain: true
   });
 
-  document.getElementById("subBtn").addEventListener("click", function() {
-    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-    // if(InputEventmatch(mailFormat))
-    alert("Thank you for Subscribing !");
+  document.getElementById("subBtn").addEventListener("click", function(e){
+    const input = document.getElementById("fname").value 
+    if(input.indexOf("@") !== -1) {
+      alert("Thank you for subcribing!")
+    } else {
+      alert("This is not a valid email address.")
+    }
+  
+   
+  
   });
 
-  const btn = document.getElementById("cartBtn")
-  btn.addEventListener("click", function(){
-alert("buy more")
+//if someone clicks on cartBtn
+//update p to 2 
+//if tempBtn is clicked again add 1 to p
 
-  })
-  // function ValidateEmail(InputText){
+let a = 0
 
-  //   let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  //   if(InputText.value.match(mailFormat))
-  //   alert("Thank you for subscribing !");
-  //    return true;
-  // }else{
-  //   alert("You have entered an invalid email address!");
-  //   return false;
-  // }
+const cart = document.getElementsByClassName("cartBtn")
+console.log(cart)
 
-  
-//   const carBtn = document.querySelectorAll(".carBtn");
-//   cartBtn.forEach(function(btn){
-//     btn.addEventListener('click',function(e){
-// console.log(cartBtn)
-//     })
-//   })
-
+for(i=0; i < cart.length; i++){
+cart[i].addEventListener("click",function(){
+a ++
+document.getElementById("number").innerHTML = a
+})
+}
 
 });
