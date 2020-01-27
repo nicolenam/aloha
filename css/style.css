@@ -112,6 +112,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p .white1 a:hover {
+  color: #b64036;
+}
+
 body {
   margin: 0 auto;
 }
@@ -161,7 +165,7 @@ header {
   position: absolute;
   left: 390px;
   bottom: 445px;
-}
+ }
 
 .navigation {
   display: flex;

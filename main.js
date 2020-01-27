@@ -7,30 +7,40 @@ document.addEventListener("DOMContentLoaded", function() {
     contain: true
   });
 
-  document.getElementById("subBtn").addEventListener("click", function(e){
-    const input = document.getElementById("fname").value 
-    if(input.indexOf("@") !== -1) {
-      alert("Thank you for subcribing!")
+  document.getElementById("subBtn").addEventListener("click", function(e) {
+    const input = document.getElementById("fname").value;
+    if (input.indexOf("@") !== -1) {
+      alert("Thank you for subcribing!");
     } else {
-      alert("This is not a valid email address.")
+      alert("This is not a valid email address.");
     }
-    
   });
 
-//if someone clicks on cartBtn
-//show the number of clicks in #number innerHTML
-//if tempBtn is clicked again add 1 to p
+  const cart = document.getElementsByClassName("cartBtn");
+  let numClick = 0;
 
+  for (i = 0; i < cart.length; i++) {
+    cart[i].addEventListener("click", function() {
+      numClick++;
+      document.getElementById("number").innerHTML = numClick;
+    });
+  }
 
+var nav = document.getElementById("nav");
 
-const cart = document.getElementsByClassName("cartBtn")
-let numClick = 0
+window.onscroll = function(){
 
-for(i=0; i < cart.length; i++){
-cart[i].addEventListener("click",function(){
-numClick ++
-document.getElementById("number").innerHTML = numClick
-})
+  if(window.pageYOffset > 100){
+  nav.style.position = "fixed";
+
+  }else {
+   box.style.position = "absolute";
+   box.style.top = 100;
+  }
 }
+
+
+
+
 
 });
