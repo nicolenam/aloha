@@ -26,21 +26,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-var nav = document.getElementById("nav");
+ window.onscroll = function() {myFunction()};
 
-window.onscroll = function(){
+var navigation = document.getElementById("nav");
+var sticky = navigation.offsetTop;
 
-  if(window.pageYOffset > 100){
-  nav.style.position = "fixed";
-
+function myFunction (){
+  if(window.pageYOffset > sticky){
+  navigation.classList.add("sticky");
   }else {
-   box.style.position = "absolute";
-   box.style.top = 100;
+ navigation.classList.remove("sticky");
   }
 }
-
-
-
-
 
 });

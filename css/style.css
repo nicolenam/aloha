@@ -177,6 +177,12 @@ header {
   padding-top: 0.5em;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .navigation ul {
   display: flex;
 }
