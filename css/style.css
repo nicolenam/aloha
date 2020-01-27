@@ -149,6 +149,20 @@ header {
   padding: 1em;
 }
 
+#number {
+  display: flex;
+  text-align: center;
+  height: 15px;
+  width: 15px;
+  font-weight: bold;
+  background-color: #e2574c;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 390px;
+  bottom: 445px;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -209,7 +223,7 @@ header {
 
 .hero-container h2 {
   display: flex;
-
+  width: 350px;
   text-align: center;
   color: white;
   text-shadow: 0.5px 0.5px 0.5px #d7d7d7;
@@ -358,7 +372,14 @@ header {
 }
 
 .cartBtn {
-  display: none;
+  display: inline-block;
+  background-color: #333;
+  border-radius: 28px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100px;
+  height: 35px;
 }
 
 .flickity-prev-next-button {
@@ -480,7 +501,7 @@ footer {
   text-decoration: none;
 }
 
-.white1 a:hover {
+footer div .white1 a:hover {
   color: #b64036;
 }
 
@@ -546,9 +567,18 @@ h6 {
     font-size: 16px;
   }
 
+  .logo {
+    display: flex;
+    width: 90%;
+  }
   header {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  #number {
+    left: 560px;
+    bottom: 445px;
   }
 
   .carousel-cell {
@@ -560,10 +590,13 @@ h6 {
   }
 
   .cart {
-    display: flex;
-    justify-content: flex-end;
     order: 1;
-    width: 70%;
+  }
+
+  .cart img {
+    display: flex;
+    max-width: 40%;
+    padding: 1em;
   }
 
   form {
@@ -585,10 +618,14 @@ h6 {
   .hero-container p {
     font-family: "Raleway Medium";
   }
-
-  .foot {
+  .hero-container h2 {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+  }
+    .foot {
     align-items: end;
-    width: 50%;
+    width: 80%;
     display: flex;
     margin-top: 40px;
   }
@@ -600,11 +637,12 @@ h6 {
     padding: 1.5em;
     background-color: #242424;
   }
-
   .sns {
     display: flex;
   }
-
+  .address {
+    text-align: left;
+  }
   .sns ul {
     display: flex;
     flex-direction: column;
@@ -625,8 +663,8 @@ h6 {
 
   .grid {
     grid-template-columns: repeat(4, 1fr);
-    height: 400px;
-    grid-gap: 0.7em;
+    height: 300px;
+    grid-gap: 0.5em;
   }
 
   .items span {
@@ -639,8 +677,8 @@ h6 {
   }
 
   .updates p {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   .items:nth-child(6) {
@@ -654,7 +692,6 @@ h6 {
     display: inline-block;
   }
 
- 
   .cartBtn {
     display: inline-block;
     background-color: #333;
@@ -662,12 +699,18 @@ h6 {
     border: none;
     color: #ffffff;
     font-size: 14px;
-
     width: 100px;
     height: 35px;
   }
 }
 @media screen and (min-width: 1240px) {
+  #number {
+    left: 1170px;
+    bottom: 420px;
+    height: 25px;
+    width: 25px;
+  }
+
   .grid {
     height: 800px;
   }
@@ -704,4 +747,6 @@ h6 {
   .carousel-cell {
     width: 25%;
   }
+
+
 }

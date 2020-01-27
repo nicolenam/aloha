@@ -14,24 +14,22 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       alert("This is not a valid email address.")
     }
-  
-   
-  
+    
   });
 
 //if someone clicks on cartBtn
-//update p to 2 
+//show the number of clicks in #number innerHTML
 //if tempBtn is clicked again add 1 to p
 
-let a = 0
+
 
 const cart = document.getElementsByClassName("cartBtn")
-console.log(cart)
+let numClick = 0
 
 for(i=0; i < cart.length; i++){
 cart[i].addEventListener("click",function(){
-a ++
-document.getElementById("number").innerHTML = a
+numClick ++
+document.getElementById("number").innerHTML = numClick
 })
 }
 
