@@ -154,18 +154,16 @@ header {
 }
 
 #number {
-  display: flex;
   text-align: center;
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   font-weight: bold;
   background-color: #e2574c;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 390px;
-  bottom: 445px;
- }
+  color: black;
+}
 
 .navigation {
   display: flex;
@@ -177,11 +175,11 @@ header {
   padding-top: 0.5em;
 }
 
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
 .navigation ul {
   display: flex;
@@ -341,7 +339,7 @@ header {
 /* GRID ENDS HERE  */
 
 /* FEATURED  SLIDESHOW STARTS HERE  */
-.featured h2 {
+#featured h2 {
   display: flex;
   justify-content: center;
   font-size: 2em;
@@ -375,10 +373,9 @@ header {
   background: #f90;
 }
 
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
 }
 
 .cartBtn {
@@ -588,7 +585,7 @@ h6 {
 
   #number {
     left: 560px;
-    bottom: 445px;
+    top: 30px;
   }
 
   .carousel-cell {
@@ -633,7 +630,7 @@ h6 {
     display: flex;
     justify-content: center;
   }
-    .foot {
+  .foot {
     align-items: end;
     width: 80%;
     display: flex;
@@ -757,6 +754,4 @@ h6 {
   .carousel-cell {
     width: 25%;
   }
-
-
 }

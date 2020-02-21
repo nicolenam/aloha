@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   let elem = document.querySelector(".carousel");
 
+
   let flkty = new Flickity(elem, {
     wrapAround: true,
     cellAlign: "left",
@@ -18,25 +19,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const cart = document.getElementsByClassName("cartBtn");
   let numClick = 0;
-
-  for (i = 0; i < cart.length; i++) {
+  for (let i = 0; i < cart.length; i++) {
     cart[i].addEventListener("click", function() {
-      numClick++;
-      document.getElementById("number").innerHTML = numClick;
+      numClick++
+    console.log(numClick);
+    document.getElementById("number").style.display = "block";
+    document.getElementById("number").innerHTML = numClick;
     });
   }
 
- window.onscroll = function() {myFunction()};
+  window.onscroll = function() {
+    myFunction();
+  };
 
-var navigation = document.getElementById("nav");
-var sticky = navigation.offsetTop;
+  const navigation = document.getElementById("nav");
+  const sticky = navigation.offsetTop;
 
-function myFunction (){
-  if(window.pageYOffset > sticky){
-  navigation.classList.add("sticky");
-  }else {
- navigation.classList.remove("sticky");
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      navigation.classList.add("sticky");
+    } else {
+      navigation.classList.remove("sticky");
+    }
   }
-}
-
 });
