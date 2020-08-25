@@ -10,6 +10,3 @@ ehthumbs.db
 
 # Ignore npm packages
 node_modules/
-
-# Ignore project assets
-assets/ 
