@@ -145,6 +145,7 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  position: relative;
 }
 
 .cart img {
@@ -160,7 +161,9 @@ header {
   font-weight: bold;
   background-color: #e2574c;
   border-radius: 50%;
-  display: inline-block;
+  display: block;
+  top: 20px;
+  left: 390px;
   position: absolute;
   color: black;
 }
@@ -175,11 +178,6 @@ header {
   padding-top: 0.5em;
 }
 
-/* .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
 
 .navigation ul {
   display: flex;
@@ -366,16 +364,12 @@ header {
   width: 100%;
 }
 
-.flickity-button {
-  background: #333;
-}
-.flickity-button:hover {
-  background: #f90;
+.flickity-enabled:focus {
+  outline: none;
 }
 
-.flickity-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 5px #19F;
+.flickity-prev-next-button {
+  display: none;
 }
 
 .cartBtn {
@@ -387,22 +381,6 @@ header {
   font-size: 14px;
   width: 100px;
   height: 35px;
-}
-
-.flickity-prev-next-button {
-  display: none;
-}
-
-/* icon color */
-.flickity-button-icon {
-  fill: white;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
 }
 
 /* FEATURED ENDS HERE */
@@ -716,6 +694,7 @@ h6 {
     bottom: 420px;
     height: 25px;
     width: 25px;
+    top: 50px;
   }
 
   .grid {
@@ -742,13 +721,8 @@ h6 {
     border: none;
     color: #ffffff;
     font-size: 14px;
-
     width: 100px;
     height: 35px;
-  }
-
-  .flickity-prev-next-button {
-    display: inline-block;
   }
 
   .carousel-cell {

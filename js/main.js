@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   let elem = document.querySelector(".carousel");
 
-
   let flkty = new Flickity(elem, {
     wrapAround: true,
     cellAlign: "left",
